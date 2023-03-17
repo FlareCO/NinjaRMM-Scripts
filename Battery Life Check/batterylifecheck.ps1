@@ -17,6 +17,6 @@ if ((Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty P
     Get-NinjaDevice | Select-Object -Property "batterylifecheck"
 } else {
     $fieldSaveName = "batterylifecheck"
-    Ninja-Property-Set -Name $fieldSaveName -Value "Keine Batterie"
+    Ninja-Property-Set -Name $fieldSaveName -Value "No Battery"
     Get-NinjaDevice | Select-Object -Property "batterylifecheck"
 }
